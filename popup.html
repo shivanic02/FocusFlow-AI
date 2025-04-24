@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FocusFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      width: 320px;
+      height: 420px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    body.calm-lavender { background: linear-gradient(135deg, #d8cfff, #f4f0fa); color: #333; }
+    body.blush-sunset { background: linear-gradient(135deg, #ffd6d6, #ffc1c1); color: #4a2c2a; }
+    body.mint-focus { background: linear-gradient(135deg, #b2f7ef, #d1f2eb); color: #2d4d44; }
+    body.deep-night { background: linear-gradient(135deg, #1c1c3c, #2e2e56); color: #e3e3f0; }
+    body.ocean-breeze { background: linear-gradient(135deg, #a7ffeb, #cbeffb); color: #2c3e50; }
+    body.coffee-crema { background: linear-gradient(135deg, #f3e5ab, #f2e6d9); color: #5d4037; }
+    body.sunshine-vibe { background: linear-gradient(135deg, #fff59d, #ffe082); color: #6d4c41; }
+    body.forest-moss { background: linear-gradient(135deg, #c8e6c9, #a5d6a7); color: #1b1b1b; }
+
+    .container {
+      padding: 20px;
+      height: 100%;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 24px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+      margin: 0 0 6px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .stat {
+      font-size: 15px;
+      font-weight: 500;
+      margin: 8px 0;
+    }
+
+    .badge-container {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .badge {
+      background: #fff3cd;
+      color: #8a6d3b;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-size: 14px;
+      border: 1px solid #fbc02d;
+      display: inline-block;
+      max-width: fit-content;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    button {
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 12px;
+      width: 100%;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: 600;
+      display: block;
+      margin: 24px 0 6px;
+      color: inherit;
+      font-family: 'Raleway', sans-serif;
+    }
+
+
+    #history-log {
+      margin-top: 12px;
+      padding-left: 18px;
+      font-size: 13px;
+    }
+
+    /* Base Button Style */
+    #view-history {
+      padding: 10px 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+      color: white;
+    }
+
+    /* Theme-specific button background colors */
+    body.calm-lavender #view-history {
+      background-color: #7b5fad;
+    }
+
+    body.blush-sunset #view-history {
+      background-color: #c62828;
+    }
+
+    body.mint-focus #view-history {
+      background-color: #00897b;
+    }
+
+    body.deep-night #view-history {
+      background-color: #b695e7;
+      color: #1a237e;
+    }
+
+    body.ocean-breeze #view-history {
+      background-color: #0277bd;
+    }
+
+    body.coffee-crema #view-history {
+      background-color: #6d4c41;
+    }
+
+    body.sunshine-vibe #view-history {
+      background-color: #f57c00;
+    }
+
+    body.forest-moss #view-history {
+      background-color: #17543e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FocusFlow 🎯</h1>
+    <p>Crush your goals one tab at a time!</p>
+
+    <div id="points" class="stat"></div>
+    <div id="streak" class="stat"></div>
+    <div id="badges" class="stat badge-container"></div>
+
+    <button id="view-history">View Drift History</button>
+
+    <label for="theme-select">🎨 Theme:</label>
+    <select id="theme-select">
+      <option value="calm-lavender">Calm Lavender</option>
+      <option value="blush-sunset">Blush Sunset</option>
+      <option value="mint-focus">Mint Focus</option>
+      <option value="deep-night">Deep Night</option>
+      <option value="ocean-breeze">Ocean Breeze</option>
+      <option value="coffee-crema">Coffee Crema</option>
+      <option value="sunshine-vibe">Sunshine Vibe</option>
+      <option value="forest-moss">Forest Moss</option>
+    </select>
+
+    <ul id="history-log"></ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
