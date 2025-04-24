@@ -35,6 +35,46 @@ FocusFlow is an intelligent Chrome extension designed to keep users focused and 
 
 ---
 
+## 🚀 Installation
+
+Follow these steps to install and run the FocusFlow Chrome Extension locally:
+
+1. Clone the repository
+
+git clone https://github.com/your-username/focusflow.git
+cd focusflow
+
+2. Add your Gemini API Key
+   
+💡 FocusFlow uses Gemini 1.5 Pro to generate intelligent nudges and motivational messages.
+To enable this, you'll need to provide your Gemini API key.
+
+- Open the file:
+  
+  /services/config.js
+
+- Replace the placeholder with your actual API key:
+  
+  const GEMINI_API_KEY = "your-api-key-here";
+
+3. Open Google Chrome and go to:
+
+chrome://extensions/
+
+4. Enable Developer Mode
+
+Toggle the switch in the top right corner.
+
+5. Click on "Load unpacked"
+   
+Select the root folder of the cloned repository (the one containing manifest.json).
+
+6. You're done! 🎉
+   
+You should now see the FocusFlow extension icon in your Chrome toolbar. Click on it to explore your streaks, earn badges, and stay focused with personalized nudges powered by Gemini 1.5 Pro.
+
+---
+
 ## 👩‍💻 Team Members
 
 - **Shivani Chauhan**  
