@@ -40,14 +40,6 @@ FocusFlow/ ├── manifest.json ├── popup.html ├── popup.js ├�
 
 ---
 
-## 👩‍💻 Team Members
-
-- **Shivani Chauhan**  
-- **Nishtha Wagh**  
-- **Shreyas Hingmire**
-
----
-
 ## 🚀 Installation
 
 Follow these steps to install and run the FocusFlow Chrome Extension locally:
@@ -86,3 +78,10 @@ Follow these steps to install and run the FocusFlow Chrome Extension locally:
    
     You should now see the FocusFlow extension icon in your Chrome toolbar. Click on it to explore your streaks, earn badges, and stay           focused with personalized nudges powered by Gemini 1.5 Pro.
 
+---
+
+## 👩‍💻 Team Members
+
+- **Shivani Chauhan**  
+- **Nishtha Wagh**  
+- **Shreyas Hingmire**
