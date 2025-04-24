@@ -35,6 +35,19 @@ FocusFlow is an intelligent Chrome extension designed to keep users focused and 
 
 ---
 
+## 📁 Folder Structure
+FocusFlow/ ├── manifest.json ├── popup.html ├── popup.js ├── background.js ├── services/ │ ├── gemini.js # Gemini 1.5 Pro integration │ ├── classifier.js # Site classification logic │ └── config.js # API keys/configs (if any) ├── styles/ │ └── popup.css # Optional: extracted styles ├── icons/ │ └── icon128.png # Extension icon └── README.md
+
+---
+
+## 👩‍💻 Team Members
+
+- **Shivani Chauhan**  
+- **Nishtha Wagh**  
+- **Shreyas Hingmire**
+
+---
+
 ## 🚀 Installation
 
 Follow these steps to install and run the FocusFlow Chrome Extension locally:
@@ -73,15 +86,3 @@ Follow these steps to install and run the FocusFlow Chrome Extension locally:
    
   You should now see the FocusFlow extension icon in your Chrome toolbar. Click on it to explore your streaks, earn badges, and stay focused   with personalized nudges powered by Gemini 1.5 Pro.
 
----
-
-## 👩‍💻 Team Members
-
-- **Shivani Chauhan**  
-- **Nishtha Wagh**  
-- **Shreyas Hingmire**
-
----
-
-## 📁 Folder Structure
-FocusFlow/ ├── manifest.json ├── popup.html ├── popup.js ├── background.js ├── services/ │ ├── gemini.js # Gemini 1.5 Pro integration │ ├── classifier.js # Site classification logic │ └── config.js # API keys/configs (if any) ├── styles/ │ └── popup.css # Optional: extracted styles ├── icons/ │ └── icon128.png # Extension icon └── README.md
